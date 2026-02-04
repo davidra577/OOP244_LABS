@@ -1,0 +1,36 @@
+Name :David Ra
+Student ID: 101977205
+Workshop 7 Reflection OOP244
+Date: Nov 15th 2020
+
+In Workshop 7 of OOP244, I learned how to inherit a derived class from a base class, access a shadowed member function, and use custom input and output functions that is defined in a base class.
+
+Inheritance is the 2nd important factor of OOP because it forms a set of relationships between related classes.
+Having a hierarchy helps and enforces concept of inheritance in OOP.
+
+The representation of hierarchy can be known as derived and base classes.
+A base class also known as parent class or a super class acts as an origin which other "derived classes" can spring from.
+A derived class, also known as child class or a sub class uses the base class as a starting point and builds on top of the base class. 
+This means that a derived class can inherit all the data members and all the member functions. (except special functions such as constructor, destructor etc.)
+
+Shadowing in hierarchy means that when a function with the same name that exists in both derived and base classes, the function that exist in the most derived class will be matched and called.
+For example, if there is a function named "yes" in both base and derived classes, the "yes" function in derived classes will be called.
+
+From Vehicle.h and Truck.h file:
+	"class Vehicle "
+	"class Truck : public Vehicle { "
+
+In workshop 7, class Truck is a derived class and class Vehicle is the base class.
+Class Truck inherited all the data members and all the member functions of the Vehicle class (except special functions such as constructor, destructor etc.)
+
+I was also able to manually access a particular member function from the parent class.
+For example,
+From Trucks.cpp file:
+	
+	new (this) Vehicle(license, year);
+	m_capacity = capacity;
+	m_load = 0;
+	Vehicle::moveTo(address);
+	
+I was able to call upon functions "moveTo" as well as a constructor of a base class (Vehicle).
+By using the scope resolution operator "::", I was able to manually access the functions.
