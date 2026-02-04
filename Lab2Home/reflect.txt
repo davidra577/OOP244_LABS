@@ -1,0 +1,37 @@
+Name :David Ra
+Student ID: 101977205
+Workshop 2 Reflection OOP244
+Date: Oct 4th 2020
+
+In Workshop 2 of OOP244, I have learned how to create and allocate a dynamic array and load one by one from the file into the dynamic array.
+I also learned about the concept and functionality of overload functions, and the importance of deallocating dynamic memory.
+
+Dynamic memory is used when we do not know how much memory is needed until the runtime of the program. 
+It allows requesting more memory from the system during the runtime.
+I have created the dynamic memory (allocating an array of Student / Account) by using "students = new Student[noOfStudents];" and "accs = new Account[noOfAccounts];" statements from part1 and part2 of the workshop 2.
+When dealing with allocating dynamic memory you need to deallocate the memory when you are done using them.
+This allows us to reduce the number of memory that is available to the system overall and prevent a memory leak.
+I have deallocated the dynamic memory in an array by using:
+"delete[] accs;
+ accs = nullptr;" 
+
+in Workshop 2, Part 2. 
+ 
+I have also learned how to utilize overloading functions. The overloading function means that there is the same identifier but with a different signature as well as return type, and parameter names are not considered part of its signature.
+For example, from Part 1 and Part 2 of Workshop 2,
+ 
+"bool load();
+bool load(Student &stds);
+void display(const Student &stds);
+void display();"
+
+
+"bool load(Account& acc);
+ bool load(const char datafile[]);
+ void display(const Account& acc);
+ void display();" 
+
+
+These are a couple of examples of overload functions that I have used. They share the same function name, but the parameters are different.
+You can call upon various overload function depending on the parameter used by the overload functions.
+Overall, I found this workshop extremely helpful as to learning about the importance of allocation/deallocation of dynamic memory and overload functions.

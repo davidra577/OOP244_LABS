@@ -1,0 +1,15 @@
+Name :David Ra
+Student ID: 101977205
+Email: dra@myseneca.ca
+Workshop 1 Reflection OOP244NEE
+Date: OCT 3rd 2020
+
+During the Workshop 1 of OOP 244, I learned how to create individual modules and header files in the C++ language. 
+Header files were used to declare function prototypes. By creating individual modules and various header files, they can be used potentially in another program.
+Overall, using header files has helped me to organize and vastly improved the modularity of the program.
+
+Since C++ is an extension of C programming language, I was able to use my previous knowledge of C programming language from IPC144 to help and familiarize myself with the basic C++ code and the g++ compiler on Seneca matrix.
+One of the new essential topics that I have learned is to utilize namespaces in C++ programming. 
+The purpose of namespace was to create a separate group of names of variables. This allowed me to use the same variable names in a different module and avoid duplicating names between variables of the same name. 
+I have learned the new type “bool,” and “auto." The type “bool” was used to store a true/false value. 
+The type “Auto” was used in place of a type when initializing and it determines the type of variable automatically.
