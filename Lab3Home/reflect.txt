@@ -1,0 +1,43 @@
+Name :David Ra
+Student ID: 101977205
+Workshop 3 Reflection OOP244
+Date: Oct 11th 2020
+
+In Workshop 3 of OOP244, I learned how to create member and member functions and utilized the public and private access levels.
+I also learned about Input / Cin and Out / Cout functions, the usage, and some public member functions of cout and cin functions.
+
+Member functions have an association with an object.
+There are three main types of member functions which are Queries, Modifiers, and Special.
+The member functions have direct access to the object's data.
+
+For example, from Lab 3 Part 2 of Bar.h File:
+
+	class Bar {
+		char title[20 + 1];
+		char a;
+		int barValue;
+		bool validStatus;
+	public:
+		void setEmpty();
+		void set(const char* name, char ch, int value);
+		bool getValid(int value);
+		void draw()const;
+	};
+	
+The Bar member has been created with private variables of barValue, validStatus, a, and title[20+1].
+The public functions within the Bar are setEmpty(), set(const char* name, char ch, int value), getValid(int value), and draw().
+When defining a member function such as setEmpty(), you must specify the scope affiliation of the member function.
+An example would be "void Bar::setEmpty()."
+When working within a memberfunction, it is similar to working within a local scope.
+Thus by having the same scope within a member class, you can have direct access to any of the data and functions.
+
+I learned how to utilize cout/cin input and output functions as well as using their public member functions.
+Cout object is an ostream type. It also has public member functions such as width, fill, and more.
+From Lab 3, part2 Bar.cpp file:
+cout.width(20); cout.fill('.'); cout << left << title;
+I have used width(), fill() and left public member functions.
+This displays the "title" variable from starting from left, with the size with a maximum of 20 characters "cout.width(20)", and all of the empty fields left with being filled with asterisk * symbol "cout.fill('.')".
+This allows us to trim down coding and easier time formatting the output.
+
+
+
