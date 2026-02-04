@@ -1,0 +1,64 @@
+Name :David Ra
+Student ID: 101977205
+Workshop 4 Reflection OOP244
+Date: Oct 18th 2020
+
+In Workshop 4 of OOP244, I learned how to create constructors, destructors, and overloading constructors.
+I have also learned how to call upon a current object by using this keyword.
+
+For example, from Lab 4 Part 2 of NameTag.h File:
+
+	public:
+		NameTag();
+		~NameTag();
+		NameTag(const char* name);
+		NameTag(const char* name, int num);
+		void print();
+		NameTag& read();
+		void flushkeys();
+		bool yes();
+
+From NameTag.cpp File:
+	NameTag::NameTag()
+	{
+		m_name = nullptr;
+		m_extNum = 0;
+	}
+
+	NameTag::~NameTag() 
+	{
+		delete[] m_name;
+		m_name = nullptr;
+	}
+	
+The declaration of default constructor function is NameTag().
+The default constructor consists of a zero-argument/parameter and does not have any return type.
+The destructor is "~NameTag()", it has no return type as well as no argument/parameter.
+Having constructors help to set the object's empty state and any other preliminary behaviour at creation time. 
+The destructors handle objects that reach the end of their lifetime and handles the deallocation of memory for dynamically allocated resources for an object.
+
+Thus, the constructor NameTag(), initialize the m_name char* array as nullptr and sets m_extNum as 0.
+The destructor deallocates dynamically allocated char* array "m_name" at the end of the program using FILO (first in, last out) mechanism.
+
+The functions "NameTag(const char* name)" and "NameTag(const char* name, int num)" represent overloading constructors, which can safely create the objects.
+
+I have also learned how to refer to the current object by using "*this."
+The keyword is used to refer to the memory in the current object when you are within the member function.
+
+From workshop 4, NameTag.cpp file:
+
+NameTag& NameTag::read() 
+{
+		...
+		...
+		strcpy(m_name, temp);
+		m_extNum = tempNum;
+		return *this;
+}
+
+
+This function returns the current object to one of the member functions.
+In workshop 5, this function returns the current object to print() in nametagMain.cpp File.
+
+This workshop forced me to all knowledge and information taught during lab 1 to 4 to complete it.
+I had to utilize input/output, dynamic memory allocation and memory cleanup, constructor/destructor, cout formatting, and utilizing Classes.
